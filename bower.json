@@ -1,0 +1,25 @@
+{
+  "name": "purescript-foreign-datetime",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/berdario/purescript-foreign-datetime.git"
+  },
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "output",
+    "bower.json",
+    "package.json"
+  ],
+  "dependencies": {
+    "purescript-prelude": "^2.0.0",
+    "purescript-js-date": "^3.0.0"
+  },
+  "devDependencies": {
+    "purescript-psci-support": "^2.0.0",
+    "purescript-jack": "^1.0.0",
+    "purescript-assert": "^2.0.0"
+  }
+}
