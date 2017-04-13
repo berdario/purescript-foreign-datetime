@@ -14,12 +14,13 @@
     "package.json"
   ],
   "dependencies": {
-    "purescript-prelude": "^2.0.0",
-    "purescript-js-date": "^3.0.0"
+    "purescript-prelude": "^3.0.0",
+    "purescript-js-date": "^4.0.0",
+    "purescript-foreign-generic": "^4.0.0"
   },
   "devDependencies": {
-    "purescript-psci-support": "^2.0.0",
-    "purescript-jack": "^1.0.0",
-    "purescript-assert": "^2.0.0"
+    "purescript-psci-support": "^3.0.0",
+    "purescript-jack": "^2.0.0",
+    "purescript-assert": "^3.0.0"
   }
 }

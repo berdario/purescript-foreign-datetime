@@ -2,12 +2,13 @@
   "private": true,
   "name": "purescript-foreign-datetime",
   "scripts": {
-    "postinstall": "bower install"
+    "postinstall": "bower install",
+    "psc-package": "psc-package"
   },
   "dependencies": {},
   "devDependencies": {
     "bower": "*",
-    "pulp": "^10.0.0",
-    "purescript": "^0.10.5"
+    "pulp": "^11.0.0",
+    "purescript": "^0.11.3"
   }
 }

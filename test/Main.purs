@@ -8,7 +8,7 @@ import Control.Monad.Eff.Console (CONSOLE, log)
 import Control.Monad.Eff.Random (RANDOM)
 import Control.Monad.Except (runExcept)
 import Data.Enum (fromEnum, toEnum, class BoundedEnum)
-import Data.Foreign.Class (read, write)
+import Data.Foreign.Class (encode, decode)
 import Jack (property, check', Property, forAll, Gen, chooseInt, justOf)
 import Test.Assert (ASSERT, assert)
 
@@ -32,5 +32,5 @@ dateTime = map DateTime (D.DateTime <$> (D.canonicalDate <$> boundedEnum <*> bou
 roundTripsViaJson :: Property
 roundTripsViaJson =
   forAll dateTime \dt ->
-    property $ pure dt == (runExcept $ read $ write dt)
+    property $ pure dt == (runExcept $ decode $ encode dt)
 

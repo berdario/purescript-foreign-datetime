@@ -1,8 +1,10 @@
 {
     "name": "purescript-foreign-datetime",
-    "set": "psc-0.10.5",
+    "set": "psc-0.11.3",
     "source": "https://github.com/purescript/package-sets.git",
     "depends": [
+        "psci-support",
+        "foreign-generic",
         "js-date",
         "prelude"
     ]
