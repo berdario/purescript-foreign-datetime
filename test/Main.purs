@@ -9,7 +9,7 @@ import Control.Monad.Eff.Random (RANDOM)
 import Control.Monad.Except (runExcept)
 import Data.Enum (fromEnum, toEnum, class BoundedEnum)
 import Data.Foreign.Class (encode, decode)
-import Jack (property, check', Property, forAll, Gen, chooseInt, justOf, suchThat)
+import Jack (property, check', Property, forAll, Gen, chooseInt, justOf)
 import Test.Assert (ASSERT, assert)
 
 import Data.DateTime.Foreign (DateTime(..))
@@ -26,11 +26,8 @@ boundedEnum = justOf $ map toEnum $
 
 
 dateTime :: Gen DateTime
-dateTime = map DateTime (D.DateTime <$> (D.canonicalDate <$> (suchThat boundedEnum notBetween0and100) <*> boundedEnum <*> boundedEnum)
+dateTime = map DateTime (D.DateTime <$> (D.canonicalDate <$> boundedEnum <*> boundedEnum <*> boundedEnum)
                                     <*> (D.Time <$> boundedEnum <*> boundedEnum <*> boundedEnum <*> boundedEnum))
-  where
-    -- temporary hack while waiting for https://github.com/purescript-contrib/purescript-js-date/pull/11
-    notBetween0and100 = (\x -> x < 0 || x > 100) <<< fromEnum
 
 roundTripsViaJson :: Property
 roundTripsViaJson =

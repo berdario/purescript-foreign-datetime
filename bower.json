@@ -15,7 +15,7 @@
   ],
   "dependencies": {
     "purescript-prelude": "^3.0.0",
-    "purescript-js-date": "^4.0.0",
+    "purescript-js-date": "^5.0.1",
     "purescript-foreign-generic": "^5.0.1"
   },
   "devDependencies": {
