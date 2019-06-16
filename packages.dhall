@@ -109,36 +109,33 @@ let additions =
 -}
 
 let mkPackage =
-      https://raw.githubusercontent.com/purescript/package-sets/psc-0.12.5-20190525/src/mkPackage.dhall sha256:0b197efa1d397ace6eb46b243ff2d73a3da5638d8d0ac8473e8e4a8fc528cf57
+      https://raw.githubusercontent.com/purescript/package-sets/psc-0.13.0-20190614/src/mkPackage.dhall sha256:0b197efa1d397ace6eb46b243ff2d73a3da5638d8d0ac8473e8e4a8fc528cf57
 
 let upstream =
-      https://raw.githubusercontent.com/purescript/package-sets/psc-0.12.5-20190525/src/packages.dhall sha256:d52b72daa09ca9eca2d62744ea051177773cfaec4303cb23b4bc1b156344eed5
+      https://raw.githubusercontent.com/purescript/package-sets/psc-0.13.0-20190614/src/packages.dhall sha256:5cbf2418298e7de762401c5719c6eb18eda4c67ba512b3f076b50a793a7fc482
 
 let overrides = {=}
 
-let additions = { int-53 =
-                    mkPackage
-                      [ "console"
-                      , "aff"
-                      , "random"
-                      , "quickcheck-laws"
-                      , "test-unit"
-                      ]
-                      "https://github.com/rgrempel/purescript-int-53.git"
-                      "bba9be944f63df81963d6e928842e975d15126f5"
-                , jack =
-                    mkPackage
-                      [ "prelude"
-                      , "foldable-traversable"
-                      , "int-53"
-                      , "lists"
-                      , "arrays"
-                      , "foreign-object"
-                      , "console"
-                      , "random"
-                      , "strings"
-                      ]
-                      "https://github.com/joneshf/purescript-jack.git"
-                      "4bdb6e42cc475419bb651cd883c5f8b96e530c5a" }
+let additions =
+      { int-53 =
+          mkPackage
+          [ "console", "aff", "random", "quickcheck-laws", "test-unit" ]
+          "https://github.com/rgrempel/purescript-int-53.git"
+          "bba9be944f63df81963d6e928842e975d15126f5"
+      , jack =
+          mkPackage
+          [ "prelude"
+          , "foldable-traversable"
+          , "int-53"
+          , "lists"
+          , "arrays"
+          , "foreign-object"
+          , "console"
+          , "random"
+          , "strings"
+          ]
+          "https://github.com/joneshf/purescript-jack.git"
+          "4bdb6e42cc475419bb651cd883c5f8b96e530c5a"
+      }
 
 in  upstream // overrides // additions

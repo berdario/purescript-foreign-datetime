@@ -815,16 +815,6 @@ feint@^1.0.2:
   dependencies:
     append-type "^1.0.2"
 
-file-to-npm-cache@^0.1.0:
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/file-to-npm-cache/-/file-to-npm-cache-0.1.0.tgz#b290065fee8fb9f4ad8ee2ded8ff1f720556ce69"
-  dependencies:
-    inspect-with-kind "^1.0.5"
-    is-plain-obj "^1.1.0"
-    npcache "^1.0.0"
-    pump "^3.0.0"
-    tar "^4.4.6"
-
 filename-regex@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/filename-regex/-/filename-regex-2.0.0.tgz#996e3e80479b98b9897f15a8a58b3d084e926775"
@@ -1105,13 +1095,14 @@ inspect-with-kind@^1.0.4, inspect-with-kind@^1.0.5:
   dependencies:
     kind-of "^6.0.2"
 
-install-purescript-cli@^0.4.0:
-  version "0.4.2"
-  resolved "https://registry.yarnpkg.com/install-purescript-cli/-/install-purescript-cli-0.4.2.tgz#380198208038f59a09216f1c75d6773d9b0cbc9c"
+install-purescript-cli@^0.5.0:
+  version "0.5.0"
+  resolved "https://registry.yarnpkg.com/install-purescript-cli/-/install-purescript-cli-0.5.0.tgz#89de485ef77b882819b5f05bd800d164b031a22d"
+  integrity sha512-72BkCL3C92R/SBfJ5AFXkqh84unJh4ZBLuS70MmyZY63TSJ5qfZRPrbWgBBOxEarRDrMJtLXGv7patoU2bUMCA==
   dependencies:
     chalk "^2.4.2"
     filesize "^4.1.2"
-    install-purescript "^0.7.0"
+    install-purescript "0.8.0-0"
     log-symbols "^3.0.0"
     log-update "^3.2.0"
     minimist "^1.2.0"
@@ -1126,13 +1117,13 @@ install-purescript-cli@^0.4.0:
     tty-width-frame "^1.0.2"
     vertical-meter "^1.0.0"
 
-install-purescript@^0.7.0:
-  version "0.7.0"
-  resolved "https://registry.yarnpkg.com/install-purescript/-/install-purescript-0.7.0.tgz#2297fe1ed3612b0d0e204002a357c8b82cb06c47"
+install-purescript@0.8.0-0:
+  version "0.8.0-0"
+  resolved "https://registry.yarnpkg.com/install-purescript/-/install-purescript-0.8.0-0.tgz#f3837d978f232f7373f2b540a0863d76d2e19499"
+  integrity sha512-aWg52jIOPfzH98UYlrPnXdvqc4o4lon10LCVplKss8kvEIKzn6r8HX5qcRNTsmdPUyCTHd1G/Qrin+KwTQLjZQ==
   dependencies:
     arch "^2.1.1"
     download-or-build-purescript "^0.3.4"
-    file-to-npm-cache "^0.1.0"
     inspect-with-kind "^1.0.5"
     is-plain-obj "^1.1.0"
     npcache "^1.0.2"
@@ -1521,7 +1512,7 @@ normalize-path@^2.0.1:
   dependencies:
     remove-trailing-separator "^1.0.1"
 
-npcache@^1.0.0, npcache@^1.0.2:
+npcache@^1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/npcache/-/npcache-1.0.2.tgz#2f00c5d7fd0210180ef595bafe4d79f0503012a9"
   dependencies:
@@ -1782,11 +1773,12 @@ punycode@^1.3.2, punycode@^1.4.1:
   version "1.4.1"
   resolved "https://registry.yarnpkg.com/punycode/-/punycode-1.4.1.tgz#c0d5a63b2718800ad8e1eb0fa5269c84dd41845e"
 
-purescript@^0.12:
-  version "0.12.5"
-  resolved "https://registry.yarnpkg.com/purescript/-/purescript-0.12.5.tgz#cee74afc29ede8a8d895237243e86ff9c87f3932"
+purescript@^0.13.0:
+  version "0.13.0"
+  resolved "https://registry.yarnpkg.com/purescript/-/purescript-0.13.0.tgz#188d16f2fbe75f438b054aab8b8a6a995438dead"
+  integrity sha512-KrhVO8sBLWiMlDqmqyXNV3FieL/wO/V7aokpqs81gmuQ4s/avDKNiZO3SXPG8VQ1i/ZbUfp7jatar/T2FLR8Nw==
   dependencies:
-    install-purescript-cli "^0.4.0"
+    install-purescript-cli "^0.5.0"
 
 qs@~6.4.0:
   version "6.4.0"
