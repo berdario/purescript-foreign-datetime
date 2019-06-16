@@ -11,16 +11,19 @@
     "bower_components",
     "output",
     "bower.json",
-    "package.json"
+    "package.json",
+    "packages.dhall",
+    "spago.dhall",
+    "yarn.lock"
   ],
   "dependencies": {
-    "purescript-prelude": "^3.0.0",
-    "purescript-js-date": "^5.0.1",
-    "purescript-foreign-generic": "^5.0.1"
+    "purescript-prelude": "^4.1.0",
+    "purescript-foreign-generic": "v9.0.0",
+    "purescript-js-date": "^6.0.0"
   },
   "devDependencies": {
-    "purescript-psci-support": "^3.0.0",
-    "purescript-jack": "^2.0.0",
-    "purescript-assert": "^3.0.0"
+    "purescript-psci-support": "^4.0.0",
+    "purescript-jack": "^3.0.0",
+    "purescript-assert": "^4.1.0"
   }
 }

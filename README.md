@@ -4,7 +4,7 @@ purescript-foreign-datetime
 [![Latest release](http://img.shields.io/github/release/berdario/purescript-foreign-datetime.svg)](https://github.com/berdario/purescript-foreign-datetime/releases)
 [![Build status](https://travis-ci.org/berdario/purescript-foreign-datetime.svg?branch=master)](https://travis-ci.org/berdario/purescript-foreign-datetime)
 
-Newtype wrapper around [purescript-datetime](https://github.com/purescript/purescript-datetime), providing IsForeign/AsForeign instances
+Newtype wrapper around [purescript-datetime](https://github.com/purescript/purescript-datetime), providing Encode/Decode instances
 
 License
 =======

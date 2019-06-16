@@ -1,7 +1,7 @@
 language: node_js
 node_js: stable
 script:
-  - yarn run pulp -- build
-  - yarn run pulp -- test
+  - yarn run spago build
+  - yarn run spago test
 
 cache: yarn
